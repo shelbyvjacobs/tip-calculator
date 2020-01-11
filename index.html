@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Tip Calculator</h1>
-
+    <div id="calculator">
+        <h1>Tip Calculator</h1>
+        <p>What is the bill total, before tax?</p>
+        <input type="text" required></input>
+        <p>How was the service?</p>
+        <select required>
+            <option>Excellent! - 25%</option>
+            <option>Great - 20%</option>
+            <option>Okay - 15%</option>
+            <option>Meh... - 10%</option>
+            <option>Terrible! - 5%</option>
+        </select>
+        <p>How many people are sharing the bill?</p>
+        <input type="range" required></input>
+        <input type="submit" ></input>
+    </div>
+    <footer>
+        <p>Made with Love by Shelby</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

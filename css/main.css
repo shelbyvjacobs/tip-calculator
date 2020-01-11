@@ -1,5 +1,19 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
+}
+
+#calculator {
+  width: 400px;
+  margin: 50px auto;
+  background-color: lightgray;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+footer {
+  background-color: gray;
+  padding: 50px;
 }
 /*# sourceMappingURL=main.css.map */
