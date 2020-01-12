@@ -1,19 +1,23 @@
-// Pseudocode
+submitButton = document.querySelector("#submit");
 
-//collect values from inputs (bill total, service quality, and number of people)
+calculateTip = () => {
+    billTotal = document.querySelector("#bill-total").value;
+    serviceQuality = document.querySelector("#service-quality").value;
+    numberOfPeople = document.querySelector("#number-of-people").value;
 
-var billTotal = document.querySelector("#bill-total").value;
-var serviceQuality = document.querySelector("#service-quality").value;
-var numberOfPeople = document.querySelector("#number-of-people").value;
+    tip = billTotal*serviceQuality/numberOfPeople;
 
-console.log(billTotal);
-console.log(serviceQuality);
-console.log(numberOfPeople);
+    roundedTip = Math.round(tip*100)/100;
 
-//validate inputs
-    //make sure nothing is empty or unchecked
-//calculate based on collected values
-    //bill total * service quality / number of people
-    //round the total to hundreth place
+    displayTip();
+};
+
+submitButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    calculateTip();
+})
+
 //innerHTML for displaying tip
-//click submit to call calculation function
+function displayTip () {
+    console.log(roundedTip);
+};
