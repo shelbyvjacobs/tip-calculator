@@ -1,4 +1,4 @@
-@mixin font-styles($size, $family, $color) {
+@mixin font-styles($size: 20px, $family: $text-font, $color: $black) {
     font-size: $size;
     font-family: $family;
     color: $color;

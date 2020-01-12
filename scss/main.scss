@@ -4,23 +4,35 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: $black;
-    @include font-styles(20px, $text-font, $black);
+    @include font-styles;
 }
 
 #calculator {
     width: 500px;
+    height: 500px;
     margin: 50px auto;
     background-color: $white;
-    border-radius: 50px;
+    border-radius: 5px;
     padding: $padding;
 }
 
 h1 {
-    @include font-styles(45px, $headline-font, $secondary-color);
+    @include font-styles(50px, $headline-font, $secondary-color);
+}
+
+p {
+    margin: 5px;
+}
+
+input,
+select {
+    margin: 20px;
 }
 
 #bill-total,
@@ -33,10 +45,6 @@ h1 {
     margin: 0 auto;
 }
 
-.button {
-    margin: 20px;
-}
-
 #tip-section {
     display: none;
 }
@@ -44,4 +52,13 @@ h1 {
 footer {
     background-color: $theme-color;
     padding: $padding;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#heart {
+    color: $secondary-color;
+    font-size: 30px;
 }

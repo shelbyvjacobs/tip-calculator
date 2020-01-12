@@ -3,6 +3,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,16 +16,26 @@ body {
 
 #calculator {
   width: 500px;
+  height: 500px;
   margin: 50px auto;
   background-color: #E3F2FD;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 50px;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 50px;
   font-family: "Calistoga", cursive;
   color: #DB5461;
+}
+
+p {
+  margin: 5px;
+}
+
+input,
+select {
+  margin: 20px;
 }
 
 #bill-total,
@@ -36,10 +48,6 @@ h1 {
   margin: 0 auto;
 }
 
-.button {
-  margin: 20px;
-}
-
 #tip-section {
   display: none;
 }
@@ -47,5 +55,14 @@ h1 {
 footer {
   background-color: #8AA29E;
   padding: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#heart {
+  color: #DB5461;
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */
