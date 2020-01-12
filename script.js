@@ -1,4 +1,6 @@
 submitButton = document.querySelector("#submit");
+tipSection = document.querySelector("#tip-section");
+tipAmount = document.querySelector("#tip-amount");
 
 calculateTip = () => {
     billTotal = document.querySelector("#bill-total").value;
@@ -20,4 +22,7 @@ submitButton.addEventListener("click", function(evt) {
 //innerHTML for displaying tip
 function displayTip () {
     console.log(roundedTip);
+    tipSection.style.display ="block";
+    tipSection.style.backgroundColor = "$white";
+    tipAmount.innerText = "$" + roundedTip;
 };

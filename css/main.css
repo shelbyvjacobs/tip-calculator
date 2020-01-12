@@ -16,7 +16,6 @@ body {
 
 #calculator {
   width: 500px;
-  height: 500px;
   margin: 50px auto;
   background-color: #E3F2FD;
   border-radius: 5px;
@@ -52,9 +51,15 @@ select {
   display: none;
 }
 
+#tip-amount {
+  font-size: 30px;
+  font-family: "Calistoga", cursive;
+  color: #DB5461;
+}
+
 footer {
   background-color: #8AA29E;
-  padding: 50px;
+  padding: 15px;
   position: fixed;
   left: 0;
   bottom: 0;

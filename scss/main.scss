@@ -15,7 +15,6 @@ body {
 
 #calculator {
     width: 500px;
-    height: 500px;
     margin: 50px auto;
     background-color: $white;
     border-radius: 5px;
@@ -49,9 +48,13 @@ select {
     display: none;
 }
 
+#tip-amount {
+    @include font-styles(30px, $headline-font, $secondary-color);
+}
+
 footer {
     background-color: $theme-color;
-    padding: $padding;
+    padding: $input-padding;
     position: fixed;
     left: 0;
     bottom: 0;
