@@ -8,19 +8,27 @@
 <body>
     <div id="calculator">
         <h1>Tip Calculator</h1>
-        <p>What is the bill total, before tax?</p>
-        <input type="text" required></input>
-        <p>How was the service?</p>
-        <select required>
-            <option>Excellent! - 25%</option>
-            <option>Great - 20%</option>
-            <option>Okay - 15%</option>
-            <option>Meh... - 10%</option>
-            <option>Terrible! - 5%</option>
-        </select>
-        <p>How many people are sharing the bill?</p>
-        <input type="range" required></input>
-        <input type="submit" ></input>
+        <form>
+            <p class="question-text">What is the bill total, before tax?</p>
+            <input type="text" required id="bill-total"></input>
+            <p class="question-text">How was the service?</p>
+            <select required id="service">
+                <option value="0.25">Excellent! - 25%</option>
+                <option value="0.2">Great - 20%</option>
+                <option value="0.15">Okay - 15%</option>
+                <option value="0.1">Meh... - 10%</option>
+                <option value="0.05">Terrible! - 5%</option>
+            </select>
+            <p class="question-text">How many people are sharing the bill?</p>
+            <input type="number" required min="1" max="10" id="number-of-people"></input>
+            <input type="submit" class="button" id="submit"></input>
+            <input type="reset" class="button" id="reset"></input>
+        </form>
+        <section id="tip-section">
+            <p class="tip-subtitle">Tip Amount:</p>
+            <h2 id="tip-amount"></h2>
+            <p class="tip-subtitle">each</p>
+        </section>
     </div>
     <footer>
         <p>Made with Love by Shelby</p>
