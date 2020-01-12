@@ -10,9 +10,9 @@
         <h1>Tip Calculator</h1>
         <form>
             <p class="question-text">What is the bill total, before tax?</p>
-            <input type="text" required id="bill-total"></input>
+            <input type="text" placeholder="Bill Amount" required id="bill-total"></input>
             <p class="question-text">How was the service?</p>
-            <select required id="service">
+            <select required id="service-quality">
                 <option value="0.25">Excellent! - 25%</option>
                 <option value="0.2">Great - 20%</option>
                 <option value="0.15">Okay - 15%</option>
@@ -20,7 +20,7 @@
                 <option value="0.05">Terrible! - 5%</option>
             </select>
             <p class="question-text">How many people are sharing the bill?</p>
-            <input type="number" required min="1" max="10" id="number-of-people"></input>
+            <input type="number" placeholder="Number of People" required min="1" max="10" id="number-of-people"></input>
             <input type="submit" class="button" id="submit"></input>
             <input type="reset" class="button" id="reset"></input>
         </form>
