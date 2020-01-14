@@ -20,7 +20,7 @@ calculateTip = () => {
 
     tip = billTotal*serviceQuality/numberOfPeople;
 
-    roundedTip = Math.round(tip*100)/100;
+    roundedTip = tip.toFixed(2);
 
     displayTip();
 };
