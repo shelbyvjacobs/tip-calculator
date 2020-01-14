@@ -74,7 +74,8 @@ select {
     display: none;
 }
 
-#tip-amount {
+#tip-amount,
+.dollar-sign {
     @include font-styles(30px, $headline-font, $secondary-color);
 }
 
