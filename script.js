@@ -19,7 +19,7 @@ calculateTip = () => {
     displayTip();
 };
 
-function displayTip () {
+displayTip = () => {
     tipSection.style.display ="block";
     tipAmount.innerText = "$" + roundedTip;
 };
