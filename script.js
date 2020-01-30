@@ -2,6 +2,8 @@ submitButton = document.querySelector("#submit");
 resetButton = document.querySelector("#reset");
 tipSection = document.querySelector("#tip-section");
 tipAmount = document.querySelector("#tip-amount");
+errorSection = document.querySelector("#error-section");
+error = document.querySelector("#error");
 
 submitButton.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -14,28 +16,37 @@ resetButton.addEventListener("click", function(evt) {
 })
 
 calculateTip = () => {
-    billTotal = document.querySelector("#bill-total").value;
+    billTotal = parseInt(document.querySelector("#bill-total").value);
     serviceQuality = document.querySelector("#service-quality").value;
-    numberOfPeople = document.querySelector("#number-of-people").value;
+    numberOfPeople = parseInt(document.querySelector("#number-of-people").value);
 
-    tip = billTotal*serviceQuality/numberOfPeople;
+    if(typeof billTotal === 'number' && isFinite(billTotal)){
+        tip = billTotal*serviceQuality/numberOfPeople;
 
-    roundedTip = tip.toFixed(2);
-
-    displayTip();
+        roundedTip = tip.toFixed(2);
+    
+        displayTip();
+    } else {
+        displayError();
+    }
 };
 
 displayTip = () => {
-    tipSection.style.display ="block";
+    tipSection.style.display = "block";
     tipAmount.innerText = "$" + roundedTip;
+    errorSection.style.display = "none";
 };
+
+displayError = () => {
+    errorSection.style.display = "block";
+    error.innerText = "Please enter numbers for the Bill Amount and Number of People sections."
+    tipSection.style.display = "none";
+}
 
 removeTip = () => {
     tipSection.style.display = "none";
+    errorSection.style.display = "none";
     billTotal = document.querySelector("#bill-total").value = "";
     serviceQuality = document.querySelector("#service-quality").value = "";
     numberOfPeople = document.querySelector("#number-of-people").value = "";
 };
-
-// add validation to make sure all fields are completed.
-// make sure the bill total is a number!

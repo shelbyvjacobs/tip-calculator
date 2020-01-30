@@ -73,11 +73,13 @@ select {
     margin: 0 auto;
 }
 
-#tip-section {
+#tip-section,
+#error-section {
     display: none;
 }
 
-#tip-amount,
+.tip-amount,
+#error,
 .dollar-sign {
     @include font-styles(30px, $headline-font, $secondary-color);
 }
