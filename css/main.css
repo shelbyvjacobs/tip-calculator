@@ -40,6 +40,10 @@ select {
   border: 1px solid #8AA29E;
   background-color: #E3F2FD;
   color: #242528;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  font-size: 16px;
+  color: grey;
 }
 
 input:focus,
@@ -94,6 +98,8 @@ select {
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
   color: #E3F2FD;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .button:hover {

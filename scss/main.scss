@@ -38,6 +38,9 @@ select {
     border: 1px solid $theme-color;
     background-color: $white;
     color: $black;
+    transition: $hover;
+    font-size: 16px;
+    color: $grey;
 }
 
 input:focus,
@@ -87,6 +90,7 @@ select {
     background-color: $secondary-color;
     border: none;
     @include font-styles(16px, $text-font, $white);
+    transition: $hover;
 }
 
 .button:hover {

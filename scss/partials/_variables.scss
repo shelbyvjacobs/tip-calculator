@@ -3,6 +3,7 @@
  // COLORS
  $black: #242528;
  $white: #E3F2FD;
+ $grey: grey;
  $theme-color: #8AA29E;
  $secondary-color: #DB5461;
  $ternary-color: #686963;
@@ -15,3 +16,6 @@
  $padding: 50px;
  $input-padding: 15px;
  $rounded-button: 40px;
+
+ // TRANSITIONS
+ $hover: 0.3s ease-in;
