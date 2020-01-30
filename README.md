@@ -4,7 +4,7 @@
 A Javascript tip calculator styled with SCSS.
 
 ### Example
-![Javascript Tip Calculator](https://i.imgur.com/sWtU8GN.png "Javascript Tip Calculator")
+![Javascript Tip Calculator](https://i.imgur.com/bvyQE1h.png "Javascript Tip Calculator")
 
 ### Technologies Used
 * HTML5
